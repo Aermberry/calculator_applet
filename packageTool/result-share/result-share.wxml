@@ -1,0 +1,8 @@
+<view class="share">
+  <view class="card">
+    <view class="expr">{{expr}}</view>
+    <view class="result">{{result}}</view>
+  </view>
+  <view class="hint">点击右上角 ··· 分享给好友</view>
+  <button class="back" bindtap="onBack">返回计算器</button>
+</view>

@@ -1,0 +1,25 @@
+.conv {
+  padding: 32rpx;
+}
+
+.field {
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 28rpx 32rpx;
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
+}
+
+.out {
+  margin-top: 32rpx;
+  text-align: center;
+  font-size: 64rpx;
+  font-weight: 600;
+  color: #07c160;
+}
+
+.out.err {
+  font-size: 30rpx;
+  color: #fa5151;
+  font-weight: 400;
+}

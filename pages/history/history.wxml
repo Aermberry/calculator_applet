@@ -1,0 +1,23 @@
+<view wx:if="{{list.length > 0}}" class="tip">左滑单条记录可删除</view>
+
+<view class="list">
+  <view wx:for="{{list}}" wx:key="id" class="row">
+    <swipe-item
+      opened="{{openId == item.id}}"
+      data-id="{{item.id}}"
+      bind:open="onSwipeOpen"
+      bind:close="onSwipeClose"
+      bind:delete="onSwipeDelete"
+    >
+      <view class="item" bindtap="onCopy" data-expr="{{item.expr}}" data-result="{{item.result}}">
+        <view class="expr">{{item.expr}}</view>
+        <view class="result">{{item.result}}</view>
+        <view class="time">{{item.timeText}}</view>
+      </view>
+    </swipe-item>
+  </view>
+</view>
+
+<view wx:if="{{list.length === 0}}" class="empty">还没有计算记录，去算一笔吧</view>
+
+<button wx:if="{{list.length > 0}}" class="clear" bindtap="onClear">清空历史</button>

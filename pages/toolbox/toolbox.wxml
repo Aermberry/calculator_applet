@@ -1,0 +1,10 @@
+<view class="grid">
+  <tool-card
+    wx:for="{{tools}}"
+    wx:key="key"
+    name="{{item.name}}"
+    desc="{{item.desc}}"
+    path="{{item.path}}"
+    bind:select="onSelect"
+  />
+</view>

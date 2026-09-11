@@ -1,0 +1,30 @@
+.screen {
+  background: #ffffff;
+  padding: 40rpx 32rpx 24rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-height: 220rpx;
+}
+
+.expr {
+  font-size: 34rpx;
+  color: var(--muted);
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.result {
+  font-size: 72rpx;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 8rpx;
+}
+
+.result.err {
+  font-size: 34rpx;
+  color: #fa5151;
+  font-weight: 400;
+}

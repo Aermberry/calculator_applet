@@ -1,0 +1,23 @@
+/* 全局样式：极简、浅色、无依赖 */
+page {
+  --primary: #07c160;
+  --text: #1a1a1a;
+  --muted: #8a8f99;
+  --bg: #f5f6f8;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+}
+
+.btn {
+  border: none;
+  background: #ffffff;
+  color: var(--text);
+  border-radius: 12rpx;
+  font-size: 30rpx;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}

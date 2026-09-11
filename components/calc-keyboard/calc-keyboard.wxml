@@ -1,0 +1,31 @@
+<view class="keyboard">
+  <view class="row">
+    <view class="key fn" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="C">C</view>
+    <view class="key fn" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="⌫">⌫</view>
+    <view class="key fn" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="%">%</view>
+    <view class="key op" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="÷">÷</view>
+  </view>
+  <view class="row">
+    <view class="key" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="7">7</view>
+    <view class="key" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="8">8</view>
+    <view class="key" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="9">9</view>
+    <view class="key op" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="×">×</view>
+  </view>
+  <view class="row">
+    <view class="key" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="4">4</view>
+    <view class="key" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="5">5</view>
+    <view class="key" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="6">6</view>
+    <view class="key op" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="-">-</view>
+  </view>
+  <view class="row">
+    <view class="key" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="1">1</view>
+    <view class="key" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="2">2</view>
+    <view class="key" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="3">3</view>
+    <view class="key op" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="+">+</view>
+  </view>
+  <view class="row">
+    <view class="key wide" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="0">0</view>
+    <view class="key" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key=".">.</view>
+    <view class="key eq" hover-class="key-hover" hover-start-time="0" hover-stay-time="100" bindtap="onTap" data-key="=">=</view>
+  </view>
+</view>

@@ -1,0 +1,17 @@
+<view
+  class="swipe"
+  bindtouchstart="onTouchStart"
+  bindtouchmove="onTouchMove"
+  bindtouchend="onTouchEnd"
+  bindtouchcancel="onTouchEnd"
+>
+  <view
+    class="swipe-inner"
+    style="transform: translateX({{x}}px); transition: {{dragging ? 'none' : 'transform 0.22s ease'}}"
+  >
+    <view class="swipe-body" bindtap="onBodyTap">
+      <slot />
+    </view>
+    <view class="swipe-action" catchtap="onDelete">删除</view>
+  </view>
+</view>

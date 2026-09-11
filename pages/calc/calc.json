@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "calc-keyboard": "/components/calc-keyboard/calc-keyboard"
+  },
+  "navigationBarTitleText": "计算器"
+}

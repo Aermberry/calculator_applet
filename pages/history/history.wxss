@@ -1,0 +1,51 @@
+.list {
+  padding: 16rpx;
+}
+
+/* 外层行容器承载间距，避免子元素 margin 影响左滑操作区的高度 */
+.row {
+  margin-bottom: 16rpx;
+}
+
+.item {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 28rpx 32rpx;
+}
+
+.expr {
+  font-size: 30rpx;
+  color: var(--muted);
+}
+
+.result {
+  font-size: 44rpx;
+  font-weight: 600;
+  margin-top: 6rpx;
+}
+
+.time {
+  font-size: 24rpx;
+  color: #b0b4bc;
+  margin-top: 8rpx;
+}
+
+.tip {
+  padding: 16rpx 32rpx 0;
+  font-size: 24rpx;
+  color: #b0b4bc;
+}
+
+.empty {
+  text-align: center;
+  color: var(--muted);
+  padding: 120rpx 0;
+  font-size: 28rpx;
+}
+
+.clear {
+  margin: 24rpx 16rpx;
+  background: #fff;
+  color: #fa5151;
+  font-size: 30rpx;
+}

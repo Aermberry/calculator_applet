@@ -1,0 +1,51 @@
+<svg viewBox="0 0 680 600" width="100%" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>小程序 DDD 分层架构依赖图</title>
+<desc>ui 依赖 application，application 依赖 domain，persistence 与 infrastructure 反向依赖 domain 实现其接口，types 与 exceptions 为最底层</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+<rect x="0" y="0" width="680" height="600" fill="#FFFFFF"/>
+<text x="340" y="26" text-anchor="middle" font-size="14" font-weight="500" fill="#2C2C2A">小程序 DDD 分层架构（箭头 = 依赖方向，对齐公司 Flutter DDD 定制）</text>
+<rect x="190" y="40" width="300" height="56" rx="8" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="340" y="60" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#085041">ui</text>
+<text x="340" y="78" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0F6E56">pages · components（页面瘦，只绑定与转发）</text>
+<path d="M340 96 L340 128" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="190" y="130" width="300" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text x="340" y="150" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#633806">application</text>
+<text x="340" y="168" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#854F0B">用例编排 · 原始输入 → cqe / domain primitive</text>
+<path d="M340 186 L340 208" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="40" y="210" width="440" height="190" rx="12" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="260" y="232" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#0C447C">domain（业务规则核心 · 零 wx 依赖可 Node 单测）</text>
+<rect x="60" y="250" width="120" height="44" rx="8" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text x="120" y="272" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0C447C">cqe</text>
+<rect x="200" y="250" width="120" height="44" rx="8" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text x="260" y="272" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0C447C">entity</text>
+<rect x="340" y="250" width="120" height="44" rx="8" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text x="400" y="272" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0C447C">service</text>
+<rect x="130" y="310" width="120" height="44" rx="8" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text x="190" y="332" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0C447C">facade</text>
+<rect x="270" y="310" width="120" height="44" rx="8" fill="#B5D4F4" stroke="#185FA5" stroke-width="0.5"/>
+<text x="330" y="332" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#0C447C">event · repository 接口</text>
+<path d="M480 278 L514 278" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M480 352 L514 352" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="520" y="250" width="120" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="580" y="270" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#2C2C2A">types</text>
+<text x="580" y="288" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#5F5E5A">domain primitive</text>
+<rect x="520" y="330" width="120" height="44" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="580" y="352" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#2C2C2A">exceptions</text>
+<path d="M200 434 L200 404" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M450 434 L450 404" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="325" y="425" text-anchor="middle" font-size="11" fill="#5F5E5A">依赖倒置：实现 domain 接口，不反向</text>
+<rect x="40" y="440" width="300" height="100" rx="12" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+<text x="190" y="462" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#27500A">persistence</text>
+<text x="190" y="486" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#3B6D11">repository 实现：storage / 云数据库</text>
+<text x="190" y="506" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#3B6D11">serializer（mapper）只在此层</text>
+<rect x="360" y="440" width="280" height="100" rx="12" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="500" y="462" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#712B13">infrastructure（防腐层）</text>
+<text x="500" y="486" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#993C1D">wx.login · 订阅 · 分享 · 支付</text>
+<text x="500" y="506" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#993C1D">cloud-rpc · 可 mock 可替换</text>
+<text x="340" y="566" text-anchor="middle" font-size="11" fill="#5F5E5A">types / exceptions 无依赖最底层 · 跨模块只引用 ID / 接口 · cqe 输入不变量在边界校验（parse, don't validate）</text>
+<text x="340" y="584" text-anchor="middle" font-size="11" fill="#5F5E5A">原 core / services / infrastructure 三层演进为 domain / application / persistence + infrastructure（对齐公司 Flutter 定制）</text>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "swipe-item": "/components/swipe-item/swipe-item"
+  },
+  "navigationBarTitleText": "历史记录"
+}

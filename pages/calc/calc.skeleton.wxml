@@ -1,0 +1,58 @@
+<!--
+此文件为开发者工具生成，生成时间: 2026/9/10 23:15:36
+使用方法：
+在 E:\WorkSpace\WorkBuddy\calculator_applet\pages\calc\calc.wxml 引入模板
+
+```
+<import src="calc.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+```
+
+在 E:\WorkSpace\WorkBuddy\calculator_applet\pages\calc\calc.wxss 中引入样式
+```
+@import "./calc.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="screen">
+      <view class="expr sk-transparent sk-opacity">0</view>
+      <view class="result sk-transparent sk-text-8-3333-184 sk-text">0</view>
+    </view>
+    <view is="components/calc-keyboard/calc-keyboard">
+      <view class="keyboard--keyboard">
+        <view class="keyboard--row">
+          <view class="keyboard--key keyboard--fn sk-transparent sk-text-30-7018-898 sk-text" data-key="C" style="background-position-x: 50%;">C</view>
+          <view class="keyboard--key keyboard--fn sk-transparent sk-text-30-7018-420 sk-text" data-key="⌫" style="background-position-x: 50%;">⌫</view>
+          <view class="keyboard--key keyboard--fn sk-transparent sk-text-30-7018-848 sk-text" data-key="%" style="background-position-x: 50%;">%</view>
+          <view class="keyboard--key keyboard--op sk-transparent sk-text-30-7018-72 sk-text" data-key="÷" style="background-position-x: 50%;">÷</view>
+        </view>
+        <view class="keyboard--row">
+          <view class="keyboard--key sk-transparent sk-text-30-7018-517 sk-text" data-key="7" style="background-position-x: 50%;">7</view>
+          <view class="keyboard--key sk-transparent sk-text-30-7018-47 sk-text" data-key="8" style="background-position-x: 50%;">8</view>
+          <view class="keyboard--key sk-transparent sk-text-30-7018-56 sk-text" data-key="9" style="background-position-x: 50%;">9</view>
+          <view class="keyboard--key keyboard--op sk-transparent sk-text-30-7018-410 sk-text" data-key="×" style="background-position-x: 50%;">×</view>
+        </view>
+        <view class="keyboard--row">
+          <view class="keyboard--key sk-transparent sk-text-30-7018-963 sk-text" data-key="4" style="background-position-x: 50%;">4</view>
+          <view class="keyboard--key sk-transparent sk-text-30-7018-310 sk-text" data-key="5" style="background-position-x: 50%;">5</view>
+          <view class="keyboard--key sk-transparent sk-text-30-7018-491 sk-text" data-key="6" style="background-position-x: 50%;">6</view>
+          <view class="keyboard--key keyboard--op sk-transparent sk-text-30-7018-734 sk-text" data-key="-" style="background-position-x: 50%;">-</view>
+        </view>
+        <view class="keyboard--row">
+          <view class="keyboard--key sk-transparent sk-text-30-7018-292 sk-text" data-key="1" style="background-position-x: 50%;">1</view>
+          <view class="keyboard--key sk-transparent sk-text-30-7018-690 sk-text" data-key="2" style="background-position-x: 50%;">2</view>
+          <view class="keyboard--key sk-transparent sk-text-30-7018-427 sk-text" data-key="3" style="background-position-x: 50%;">3</view>
+          <view class="keyboard--key keyboard--op sk-transparent sk-text-30-7018-457 sk-text" data-key="+" style="background-position-x: 50%;">+</view>
+        </view>
+        <view class="keyboard--row">
+          <view class="keyboard--key keyboard--wide sk-transparent sk-text-30-7018-508 sk-text" data-key="0" style="background-position-x: 50%;">0</view>
+          <view class="keyboard--key sk-transparent sk-text-30-7018-582 sk-text" data-key="." style="background-position-x: 50%;">.</view>
+          <view class="keyboard--key keyboard--eq sk-transparent sk-text-30-7018-555 sk-text" data-key="=" style="background-position-x: 50%;">=</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

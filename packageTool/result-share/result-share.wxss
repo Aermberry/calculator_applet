@@ -1,0 +1,36 @@
+.share {
+  padding: 80rpx 32rpx;
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 56rpx 32rpx;
+  box-shadow: 0 4rpx 24rpx rgba(0, 0, 0, 0.06);
+}
+
+.expr {
+  font-size: 32rpx;
+  color: var(--muted);
+}
+
+.result {
+  font-size: 72rpx;
+  font-weight: 600;
+  margin-top: 12rpx;
+  color: #07c160;
+}
+
+.hint {
+  font-size: 26rpx;
+  color: var(--muted);
+  margin-top: 40rpx;
+}
+
+.back {
+  margin-top: 48rpx;
+  background: #07c160;
+  color: #fff;
+  font-size: 30rpx;
+}

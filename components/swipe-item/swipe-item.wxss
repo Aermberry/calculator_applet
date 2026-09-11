@@ -1,0 +1,31 @@
+.swipe {
+  position: relative;
+  overflow: hidden;
+}
+
+.swipe-inner {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  will-change: transform;
+}
+
+.swipe-body {
+  flex: 1;
+  min-width: 100%;
+}
+
+/* 操作区常驻在内容右侧之外，随内容左滑进入可视区 */
+.swipe-action {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 80px; /* 与 swipe-item.js 的 ACTION_WIDTH 保持一致 */
+  height: 100%;
+  background: #fa5151;
+  color: #fff;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,6 @@
+<view class="screen">
+  <view class="expr">{{expr}}</view>
+  <view class="result {{error ? 'err' : ''}}">{{error || result}}</view>
+</view>
+
+<calc-keyboard bind:key="onKey" />

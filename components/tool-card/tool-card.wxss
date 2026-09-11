@@ -1,0 +1,27 @@
+.tool-card {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 32rpx;
+  margin: 16rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.04);
+}
+
+.tool-card:active {
+  background: #f7f8fa;
+}
+
+/* 按压态：hover-class 由 view 在 touchstart 挂载（小程序全端生效），:active 仅作兜底 */
+.tool-card.tool-card-hover {
+  background: #f7f8fa;
+}
+
+.name {
+  font-size: 34rpx;
+  font-weight: 600;
+}
+
+.desc {
+  font-size: 26rpx;
+  color: var(--muted);
+  margin-top: 8rpx;
+}

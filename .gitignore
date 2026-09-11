@@ -1,0 +1,31 @@
+# ---------- 依赖 ----------
+node_modules/
+miniprogram_npm/
+
+# ---------- 微信开发者工具 ----------
+# 个人本地配置（appid、编译模式、私有设置），按官方建议不入库
+project.private.config.json
+.wxcloud/
+
+# ---------- 日志 ----------
+*.log
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 编辑器 ----------
+.idea/
+.vscode/
+*.swp
+
+# ---------- 构建 / 临时产物 ----------
+dist/
+build/
+coverage/
+.cache/
+*.tmp

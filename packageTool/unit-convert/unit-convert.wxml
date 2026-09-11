@@ -1,0 +1,17 @@
+<view class="conv">
+  <picker mode="selector" range="{{categories}}" range-key="label" bindchange="onCategory">
+    <view class="field">类别：{{currentLabel}}</view>
+  </picker>
+
+  <input class="field" placeholder="输入数值" value="{{value}}" bindinput="onValue" type="digit" />
+
+  <picker mode="selector" range="{{units}}" range-key="label" bindchange="onFrom">
+    <view class="field">从：{{fromLabel}}</view>
+  </picker>
+
+  <picker mode="selector" range="{{units}}" range-key="label" bindchange="onTo">
+    <view class="field">到：{{toLabel}}</view>
+  </picker>
+
+  <view class="out {{error ? 'err' : ''}}">{{error || result || '—'}}</view>
+</view>

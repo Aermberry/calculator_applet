@@ -1,0 +1,5 @@
+<view class="mine">
+  <view class="title">计算器小程序</view>
+  <view class="tips">工具类小程序 · 打开即用</view>
+  <view class="version">版本 {{version}}</view>
+</view>
